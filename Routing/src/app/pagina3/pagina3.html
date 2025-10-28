@@ -1,4 +1,2 @@
-<h2>Elenco studenti</h2>
-<div *ngFor="let s of studenti">
-  <app-studente [nome]="s.nome" [classe]="s.classe"></app-studente>
-</div>
+
+  <app-studente *ngFor="let s of studenti" [nome]="s.nome" [classe]="s.classe"></app-studente>

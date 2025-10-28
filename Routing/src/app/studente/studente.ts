@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StudentiService } from '../services/studenti-service';
 
 @Component({
   selector: 'app-studente',

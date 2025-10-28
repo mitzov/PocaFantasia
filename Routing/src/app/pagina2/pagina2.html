@@ -1,1 +1,16 @@
-<p>pagina2 works!</p>
+<div>
+  <h2>Inserisci nuovo studente</h2>
+  <form (submit)="onSubmit(nomeInput, classeInput, mediaInput); $event.preventDefault();">
+    <label>Nome: <input type="text" #nomeInput /></label><br/>
+    <label>Classe: <input type="text" #classeInput /></label><br/>
+    <label>Media voti: <input type="number" step="0.1" #mediaInput /></label><br/>
+    <button type="submit">Aggiungi studente</button>
+  </form>
+
+  <h3>Elenco studenti</h3>
+  <ul>
+    <li *ngFor="let s of studenti">
+      {{s.id}} - {{s.nome}} ({{s.classe}}): {{s.mediaVoti}}
+    </li>
+  </ul>
+</div>
